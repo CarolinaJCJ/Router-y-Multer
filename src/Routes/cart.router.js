@@ -3,8 +3,8 @@ import CartManager from '../cartManager.js'
 import ProductManager from '../ProductM.js'
 
 const router = Router()
-const carrito = new CartManager()
-const producto = new ProductManager()
+const carrito = new CartManager('./carrito.json')
+const producto = new ProductManager('./productos.json')
 
 
 //GET
@@ -58,4 +58,4 @@ router.delete('/:cid', async(req, res) =>{
     res.send({status: "Success", message: await carrito.deleteCart(cid)})
 })
 
-export default router
+export default router;
