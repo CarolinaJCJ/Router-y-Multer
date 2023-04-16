@@ -1,8 +1,8 @@
 import fs from 'fs'
 
 export default class CartManager {
-    constructor(ruta){
-        this.path = ruta
+    constructor(){
+        this.path = './carrito.json'
         this.cart = []
         
     }
