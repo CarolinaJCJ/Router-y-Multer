@@ -4,7 +4,7 @@ import ProductManager from'../ProductM.js'
 const router = Router()
 
 
-const producto = new ProductManager()
+const producto = new ProductManager('./productos.json')
 
 //GET
 router.get('/', async(req, res) => {
