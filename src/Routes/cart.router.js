@@ -58,4 +58,4 @@ router.delete('/:cid', async(req, res) =>{
     res.send({status: "Success", message: await carrito.deleteCart(cid)})
 })
 
-export default {router}
+export default router
